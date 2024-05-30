@@ -108,10 +108,6 @@ git merge issue3
 # 画图解释目前的历史记录
 
 
-
-
-
-
 # 创建Github Repo
 # 先在Github上创建一个Repo，创建完后，下面三行是自动生成的
 git remote add origin https://github.com/cengxiye/learn-git-2024.git # 首先将远程仓库的地址添加到本地仓库，并将其命名为 "origin"
@@ -139,6 +135,14 @@ git commit -m "change file, to be pushed to origin"
 git push
 # 检查Github上的文件，已经更新
 
+    #强制覆该推送
+    git push -f 【organ】 【mian】
+    #指定最后版本推送
+    git pull --rebase #建议使用
+    # 合并推送
+    git pull    #拉取远程库
+    git status  #查看需要处理的冲突
+    git add     # 解决冲突后上传 
 
 # PULL
 # 在Github上修改txt
